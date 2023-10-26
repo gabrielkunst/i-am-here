@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Participant } from "../Participant/Participant";
 import { styles } from "./styles";
 import {
+	Alert,
 	FlatList,
-	ScrollView,
 	Text,
 	TextInput,
 	TouchableOpacity,
@@ -17,8 +17,19 @@ export function Home() {
 
 	function handleParticipandAdd() {
 		const nameWithoutSpaces = name.trim();
+
 		if (!nameWithoutSpaces) {
-			alert("Nome do participante não pode ser vazio");
+			Alert.alert(
+				"Participante Já Adicionado",
+				"Nome do participante não pode ser vazio"
+			);
+			return;
+		}
+		const participantAlreadyExists = participants.find(
+			(participant) => participant.name === nameWithoutSpaces
+		);
+		if (participantAlreadyExists) {
+			alert("Esse participante já foi adicionado");
 			return;
 		}
 
@@ -34,9 +45,25 @@ export function Home() {
 		setName("");
 	}
 
-	function handleParticipantRemove(id: string) {
-		setParticipants((prevParticipants) =>
-			prevParticipants.filter((participant) => participant.id !== id)
+	function handleParticipantRemove({ id, name }: ParticipantType) {
+		Alert.alert(
+			"Remover Participante",
+			`Tem certeza que deseja remover o participante ${name}?`,
+			[
+				{
+					text: "Sim",
+					onPress: () =>
+						setParticipants((prevParticipants) =>
+							prevParticipants.filter(
+								(participant) => participant.id !== id
+							)
+						),
+				},
+				{
+					text: "Não",
+					style: "cancel",
+				},
+			]
 		);
 	}
 

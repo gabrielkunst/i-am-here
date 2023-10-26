@@ -4,7 +4,7 @@ import { ParticipantType } from "../../@types/ParticipantType";
 
 interface ParticipantProps {
 	participant: ParticipantType;
-	onRemove: (id: string) => void;
+	onRemove: (participant: ParticipantType) => void;
 }
 
 export function Participant({
@@ -18,7 +18,7 @@ export function Participant({
 			</View>
 			<TouchableOpacity
 				style={styles.button}
-				onPress={() => onRemove(id)}
+				onPress={() => onRemove({ id, name })}
 			>
 				<Text style={styles.buttonText}>-</Text>
 			</TouchableOpacity>
