@@ -69,8 +69,8 @@ export function Home() {
 
 	return (
 		<View style={styles.container}>
-			<Text style={styles.eventName}>Nome do evento</Text>
-			<Text style={styles.eventDate}>Sexta, 4 de Novembro de 2022</Text>
+			<Text style={styles.eventName}>Níver do Pedro</Text>
+			<Text style={styles.eventDate}>Sexta, 4 de Novembro de 2023</Text>
 			<View style={styles.form}>
 				<TextInput
 					value={name}
@@ -99,8 +99,7 @@ export function Home() {
 				)}
 				ListEmptyComponent={() => (
 					<Text style={styles.emptyListText}>
-						Ninguém chegou no evento ainda? Adicione participantes a
-						sua lista de presença.
+						Adicione participantes para o Pedro não ficar sozinho
 					</Text>
 				)}
 			/>
