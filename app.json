@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "imherets",
-    "slug": "imherets",
+    "slug": "i-am-here",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4c9f409e-e9fe-45f0-a0bb-cdd52bbdeffe"
+      }
+    },
+    "owner": "gabrielktzdev"
   }
 }
