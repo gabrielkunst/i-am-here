@@ -4,11 +4,11 @@ import { ParticipantType } from "../../@types/ParticipantType";
 
 interface ParticipantProps {
 	participant: ParticipantType;
-	handleParticipantRemove: (id: string) => void;
+	onRemove: (id: string) => void;
 }
 
 export function Participant({
-	handleParticipantRemove,
+	onRemove,
 	participant: { id, name },
 }: ParticipantProps) {
 	return (
@@ -18,7 +18,7 @@ export function Participant({
 			</View>
 			<TouchableOpacity
 				style={styles.button}
-				onPress={() => handleParticipantRemove(id)}
+				onPress={() => onRemove(id)}
 			>
 				<Text style={styles.buttonText}>-</Text>
 			</TouchableOpacity>

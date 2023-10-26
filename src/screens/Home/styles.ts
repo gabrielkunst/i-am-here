@@ -44,6 +44,12 @@ export const styles = StyleSheet.create({
 		gap: 12,
 	},
 	participants: {
+		rowGap: 12,
 		gap: 12,
+	},
+	emptyListText: {
+		textAlign: "center",
+		color: "#FFF",
+		fontSize: 16,
 	},
 });
