@@ -1,5 +1,11 @@
+import { StatusBar } from "expo-status-bar";
 import { Home } from "./src/screens/Home";
 
 export default function App() {
-	return <Home />;
+	return (
+		<>
+			<Home />
+			<StatusBar style="light" backgroundColor="#131016" />
+		</>
+	);
 }

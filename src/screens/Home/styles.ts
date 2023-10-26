@@ -39,8 +39,11 @@ export const styles = StyleSheet.create({
 	},
 	form: {
 		marginTop: 36,
-		marginBottom: 42,
+		marginBottom: 24,
 		flexDirection: "row",
+		gap: 12,
+	},
+	participants: {
 		gap: 12,
 	},
 });
