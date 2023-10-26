@@ -29,7 +29,10 @@ export function Home() {
 			(participant) => participant.name === nameWithoutSpaces
 		);
 		if (participantAlreadyExists) {
-			alert("Esse participante já foi adicionado");
+			Alert.alert(
+				"Participante Já Adicionado",
+				`O participante ${nameWithoutSpaces} já foi adicionado`
+			);
 			return;
 		}
 
