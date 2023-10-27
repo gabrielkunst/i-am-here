@@ -13,4 +13,4 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 
 ## Imagens
 
-As imagens do projeto serão fornecidas posteriormente nesta seção para fornecer uma visão geral do aplicativo e de sua funcionalidade.
+<img src="./assets/screenshots.png" />
