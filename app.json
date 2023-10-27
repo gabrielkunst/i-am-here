@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "imherets",
-    "slug": "i-am-here",
+    "slug": "iamhere",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,20 +15,22 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "gktzdev.iamhere"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.gabrielktzdev.iamhere"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "4c9f409e-e9fe-45f0-a0bb-cdd52bbdeffe"
+        "projectId": "c298c63f-1402-43d8-8309-b2fe6e9135eb"
       }
     },
     "owner": "gabrielktzdev"
